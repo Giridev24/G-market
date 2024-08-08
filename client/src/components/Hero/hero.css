@@ -196,7 +196,8 @@ body {
   }
 
   .contai {
-    min-width: 95vw;
+    min-width: 100vw;
+    border: none;
   }
   .contai .row .col p {
     padding: 2% 4% 2% 4%;
