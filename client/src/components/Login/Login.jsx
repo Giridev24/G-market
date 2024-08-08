@@ -49,7 +49,7 @@ function Login() {
           localStorage.setItem("user", JSON.stringify(user));
           setTimeout(() => {
             navigate("/upload");
-          }, 1000);
+          }, 100);
         } else {
           setErrorMessage(result.data.msg, "hi");
           handleShake();
