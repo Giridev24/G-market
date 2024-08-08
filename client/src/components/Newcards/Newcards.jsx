@@ -160,7 +160,7 @@ const Newcards = () => {
   const renderSlides = () => {
     if (loading) {
       return (
-        <h2 className="text-center text-warning load">Loads in 50 secs...</h2>
+        <h2 className="text-center text-warning load">Loading...</h2>
       );
     } else {
       return products.map((product) => (
