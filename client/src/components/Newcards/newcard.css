@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ 
+  font-weight: 400;
+  font-style: normal;
+}
+.card{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardbody{
+  background-color: #eeeeee;
+  width: 100%;
+}
+.load{
+  letter-spacing: 5px ;
+ font-size: 24px;
+}
+.cardbody h4{
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 18px;
+ 
+}
+
+.cardbody .lead{
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+
+.card-body p{
+ 
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.card-body h5{
+
+  letter-spacing: 1px;
+}
+.cd{
+    border: 0px;
+    width: 14rem;
+    height: 40%;
+    border-radius: 0px; 
+   
+}
+
+.cd .card-body{
+  border-radius: 0px;
+ 
+}
+.card-img-top{
+  min-height: 130px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+
+.card-body .favorites{
+  height: 16px;
+  width: 16px;
+  position: relative;
+  bottom: 8px;
+ margin-left: auto;
+ 
+}
+.card-body .favorites:hover{
+  height: 24px;
+  width: 24px;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.btns .col{
+  background-color: yellow;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.toast.success {
+  background-color: #28a745; /* Green */
+}
+
+.toast.danger {
+  background-color: #dc3545; /* Red */
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .scroll-animate {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  
+  .scroll-animate.animate {
+    animation: fadeInUp 1.5s forwards; /* Play the animation and retain the final state */
+  }
+  .lnk{
+    text-decoration: none;
+  }
+
+
+
+
+  .slider-container {
+    width: 80%; /* Adjust the width as per your layout */
+    margin: auto; /* Center the slider */
+  }
+  
+  .slider-container .slick-slide {
+    text-align: center;
+    background: #f8f9fa; /* Background color of each slide */
+    color: #343a40; /* Text color of each slide */
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for each slide */
+  }
+  
+  .slider-container .slick-prev,
+  .slider-container .slick-next {
+    font-size: 1.5rem; /* Size of the previous and next arrows */
+    color: #007bff; /* Color of the arrows */
+    z-index: 1; /* Ensure arrows appear on top of slides */
+  }
+  
+  .slider-container .slick-prev {
+    left: -30px; /* Position the previous arrow */
+  }
+  
+  .slider-container .slick-next {
+    right: -30px; /* Position the next arrow */
+  }
+  
+  .slider-container .slick-dots {
+    bottom: -30px; /* Position the dots */
+  }
+  
+  .slider-container .slick-dots li button:before {
+    font-size: 12px; /* Size of the dot indicators */
+    color: #007bff; /* Color of the dots */
+  }
+  
+  .slider-container .slick-dots li.slick-active button:before {
+    color: #0056b3; /* Color of the active dot */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 600px){
+
+
+.cardbody{
+  width: 100%;
+}
+
+    .cd{
+      border: 0px;
+       width: 13rem;
+       height: 30%;
+      border-radius: 0px; 
+  }
+
+
+  .cardbody h4{
+    letter-spacing: 1px;
+    color: #30a5d3;
+    font-size: 16px;
+  }
+  .cardbody h6{
+    font-size: 14px;
+  }
+
+    
+  }

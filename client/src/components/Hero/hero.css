@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --footercolor: #4ab6e1  /* #4ab6e1 #ffcaaf*/;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+.hero-main {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contai {
+  height: 100%;
+  max-width: 70vw;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: none;
+}
+.contai .row {
+  margin-top: 0px;
+}
+.default .row .col .lottie1 {
+  height: 250px;
+  width: 250px;
+  animation: 1.5s fadeInUp;
+}
+.contai .row .col h1 {
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  -webkit-text-stroke: 1px var(--footercolor);
+}
+.contai .row .col p {
+  color: #acacac;
+  text-align: center;
+  font-size: 14px;
+  padding: 1% 6% 1% 6%;
+  letter-spacing: 0.5px;
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End fully opaque */
+  }
+}
+.contai .row .col {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contai .row .col img {
+  height: 140px;
+  width: 140px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: 1.5s fadeInUp;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.default {
+  background-color: #4ab6e1;
+}
+
+.default .category .col .cat-card {
+  height: 100px;
+  width: 90px;
+  border: 1px solid var(--footercolor);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.default .category {
+  margin-top: 20px;
+}
+.default .category .col p {
+  color: #30a5d3;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.b-button {
+  margin-top: 30px;
+  max-height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.back-button {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  padding: 4px;
+  transition: height 0.3s ease, width 0.3s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.back-button:hover {
+  height: 30px;
+  width: 30px;
+}
+
+.default {
+  width: 100%;
+  background-color: var(--footercolor);
+}
+.default .row {
+  width: 100%;
+}
+
+
+.default .category {
+  width: 70%;
+}
+
+.footer {
+  background-color: var(--footercolor);
+
+  /* background-color:#62a5bf; */
+}
+
+.footer .row {
+  margin: 0px;
+}
+.footer .lottie2 {
+  height: 160px;
+  width: 160px;
+}
+
+.footer .payment {
+  width: 25%;
+  margin-left: 20px;
+}
+.footer .footertop p {
+  margin: 30px 0px 0px 20px;
+  min-width: 100%;
+}
+
+.card-body {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 0px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .row {
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contai .row .col h1 {
+    font-size: 28px;
+  }
+  .footer .payment {
+    width: 70%;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-main {
+    height: 100%;
+  }
+
+  .contai {
+    min-width: 95vw;
+  }
+  .contai .row .col p {
+    padding: 2% 4% 2% 4%;
+  }
+  .contai .row .col h1 {
+    font-size: 52px;
+  }
+
+  .contai .category .col .cat-card {
+    height: 90px;
+    width: 80px;
+    border: 1px solid #30a5d3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contai .category .col p {
+    color: #30a5d3;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .footer {
+    min-width: 100% !important;
+    background-color: var(--footercolor);
+  }
+  .footer .payment {
+    width: 60%;
+    margin-left: 0px;
+  }
+
+  .footer .footertop p {
+    margin: 20px 0px 0px 10px;
+  }
+  .footer .payment img {
+    margin-left: 15px;
+  }
+  .default .category {
+    width: 100%;
+  }
+}

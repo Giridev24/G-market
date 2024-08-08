@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: aliceblue;
+  }
+  
+  
+  :root{
+    --blue:#4ab6e1;
+  }
+  .cart-body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: transparent;
+   
+  }
+  .cart-main{
+    min-height: 70vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .t {
+    width: 90%;
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgb(111, 137, 164) 0px 20px 30px -10px;
+    text-align: start;
+
+  }
+  
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(5%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .cart-cards {
+    animation: 1.5s fadeInUp;
+    margin: 3px;
+    padding: 6px;
+  }
+  
+  
+  .cont{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-left: 1px;
+  }
+  
+  
+  .total {
+    display: flex;
+    justify-content: end;
+    margin-right: 0px;
+    align-items: center;
+  }
+  
+  
+  .cart-button{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    max-height: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .back-button {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  padding: 4px;
+    transition: height 0.3s ease, width 0.3s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .back-button:hover {
+    height: 30px;
+    width: 30px;
+   
+  }
+  
+  
+  
+  .item-details p{
+    font-size: 12px;
+    letter-spacing: 1px;
+    min-width: 100%;
+  }
+  
+  
+  .cart-cards{
+    background-color:rgb(255, 255, 255);
+   width: 250px;
+  
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+  
+   
+  .cart-main{
+    min-height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .t {
+    width: 95vw;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: none;
+    justify-content: center;
+    text-align: start;
+    
+  }
+  
+  .cart-cards{
+      background-color: rgb(255, 255, 255);
+      width: 47%;
+      
+   
+    }
+  
+  
+  }
+  

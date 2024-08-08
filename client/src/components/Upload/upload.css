@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: transparent;
+}
+.upload-main{
+  background-color: transparent;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ background-color: white;
+  height: 100%;
+  width: 70vw;
+  margin: 0px;
+  padding-right: 20px;
+}
+
+.upload-child .admin-dash{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #9fd6e0;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-bottom: 0px;
+  padding-right: 20px;
+}
+
+.upagelft {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.prdctform {
+  height: 400px;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgb(207, 237, 248);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    animation: 1.5s fadeInUp;
+   
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
+.upagergt {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upagergt .row{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin-left: 0px;
+}
+
+.n {
+  width: 200px;
+  margin-left: 48px;
+  border: 2px solid rgb(166, 163, 163);
+  border-radius: 5px;
+}
+
+.d {
+  margin-left: 12px;
+}
+.p {
+  margin-left: 58px;
+}
+.cf {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.ub{
+  position: relative;
+  left: 80px;
+  top: 25px;
+  height: 40px;
+}
+
+.l label {
+  margin-left: 20px;
+  font-size: 14px;
+}
+input::placeholder {
+  color: grey;
+  font-weight: 650;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.back-button {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+padding: 4px;
+  transition: height 0.3s ease, width 0.3s ease;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.back-button:hover {
+  height: 30px;
+  width: 30px;
+ 
+}
+
+
+
+.l {
+  margin: 15px;
+}
+.l:nth-child(5){
+  position: relative;
+  left: 80px;
+}
+.ud {
+  border: 2px solid #62a5bf;
+  border-radius: 0px;
+ padding: 20px;
+}
+
+.fc {
+  position: relative;
+  top: 10vh;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ud .detail-body {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.card-img{
+  margin-left: 30px;
+}
+
+.ob {
+  margin: 20px;
+  margin-left: auto;
+  padding: 5px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.ob:hover {
+  background-color: lightblue;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.scroll-animate {
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.scroll-animate.animate {
+  animation: fadeInUp 1.5s forwards; /* Play the animation and retain the final state */
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .upload-child .admin-dash{
+    font-size: 12px;
+    margin-bottom: 0px;
+    letter-spacing: 4px;
+  }
+
+  .cf{
+    margin-left: 5px ;
+  }
+  .upload-child{
+    width: 70vw !important;
+    margin: 0;
+    padding: 0;
+  }
+  .upagelft {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .prdctform {
+    margin-top: 20px;
+    height: 420px;
+    width: 88vw;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(207, 237, 248);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .upagergt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ud{
+  width: 100%;
+}
+
+  .ud .detail-body {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    width: 90%;
+  }
+
+  .n {
+    width: 150px;
+    margin-left: 8px;
+    border: 2px solid rgb(166, 163, 163);
+    border-radius: 5px;
+  }
+  .fc {
+    position: relative;
+    top: 0vh;
+  }
+  .l:nth-child(5){
+    position: relative;
+    left: -10px;
+    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .upload-child .admin-dash{
+    font-size: 12px;
+    margin-bottom: 0px;
+    letter-spacing: 4px;
+  }
+
+  .cf{
+    margin-left: 5px ;
+  }
+  .upload-child{
+    width: 95vw !important;
+    margin: 0;
+    padding: 0;
+  }
+  .upagelft {
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .prdctform {
+    margin-top: 20px;
+    height: 420px;
+    width: 88vw;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(207, 237, 248);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .upagergt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ud{
+  width: 100%;
+}
+
+  .ud .detail-body {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    width: 90%;
+  }
+
+  .n {
+    width: 150px;
+    margin-left: 8px;
+    border: 2px solid rgb(166, 163, 163);
+    border-radius: 5px;
+  }
+  .fc {
+    position: relative;
+    top: 0vh;
+  }
+  .l:nth-child(5){
+    position: relative;
+    left: -10px;
+    
+  }
+}

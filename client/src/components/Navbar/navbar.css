@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --navcolor : #4ab6e1    /*   #ffcaaf      */;
+}
+
+
+.main-nav {
+  height: 70px;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.main-nav .row {
+  height: 70px;
+  width: 70vw;
+ background-color: var(--navcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  border-radius: 10px 10px 0 0;
+  padding-top: 0px;
+  
+}
+.main-nav .row .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.main-nav div form button{
+    height: 35px;
+}
+
+.main-nav div form button:hover{
+    background-color: transparent;
+    color: white;
+    opacity: 0.7;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.main-nav div form input {
+  height: 35px;
+  width: 400px;
+  background-color: transparent;
+  border: 1px solid white;
+  caret-color: white;
+  color: white;
+}
+.main-nav div form input::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  color: white; /* Placeholder text color */
+  opacity: 0.7; /* Optional: Adjust opacity to your preference */
+}
+.main-nav div form input:focus {
+  background-color: transparent !important;
+  outline: none; /* Optionally remove the outline */
+  box-shadow: none;
+  border: 1px solid #e7e7e7;
+}
+.main-nav div img {
+  height: 26px;
+  width: 26px;
+  filter: invert(1);
+  transition: height 0.3s ease, width 0.3s ease;
+}
+.main-nav div img:hover {
+  height: 32px;
+  width: 32px;
+  filter: invert(1);
+}
+.main-nav div form img {
+  height: 15px;
+  width: 15px;
+}
+.main-nav div form img:hover {
+  height: 15px;
+  width: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .main-nav {
+        height: 70px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      
+      }
+
+      .main-nav .row {
+        height: 70px;
+        max-width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+  .main-nav div form input {
+    width: 80%;
+    height: 40px;
+  }
+
+  .main-nav div img {
+    height: 25px;
+    width: 25px;
+    filter: invert(1);
+  }
+  .main-nav div form img {
+    height: 15px;
+    width: 15px;
+  }
+  .main-nav .row {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+    .main-nav {
+        height: 60px;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+      }
+
+      .main-nav .row {
+        height: 60px;
+        max-width: 95vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+      }
+
+      .main-nav div form{
+        position: relative;
+        bottom: 3px;
+      }
+
+  .main-nav div form input {
+    width: 90px;
+    height: 37px;
+  }
+
+  .main-nav div img {
+    height: 25px;
+    width: 25px;
+    filter: invert(1);
+  }
+  .main-nav div form img {
+    height: 15px;
+    width: 15px;
+  }
+  .main-nav .row {
+    width: 100%;
+  }
+}
