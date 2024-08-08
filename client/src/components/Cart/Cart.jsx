@@ -85,7 +85,7 @@ const Cart = () => {
         <hr />
         {error && <p className="text-danger">{error}</p>}
         {loading ? (
-          <h5 className="text-center text-warning load">Loads in 50 secs...</h5>
+          <h5 className="text-center text-warning load">Loading...</h5>
         ) : (
           <div className="cont row m-0 ">
             {images.map((image) => (
