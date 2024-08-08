@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin:   https://g-market-five.vercel.app, /*'http://localhost:5173'*/
+  origin:   'https://g-market-five.vercel.app', //'http://localhost:5173'
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   credentials: true,
 };
