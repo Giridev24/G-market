@@ -210,7 +210,7 @@
      
 .detail-main .detail-child{
     height: 90vh;
-    width: 95vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: start;
