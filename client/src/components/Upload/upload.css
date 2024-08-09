@@ -291,7 +291,7 @@ padding: 4px;
     margin-left: 5px ;
   }
   .upload-child{
-    width: 100vw;
+    min-width: 100vw;
     margin: 0;
     padding: 0;
   }
@@ -315,7 +315,7 @@ padding: 4px;
 
   .upagergt {
     display: flex;
-    width: 100vw;
+    min-width: 100vw;
     height: 100%;
     background-color: rgb(255, 255, 255);
     margin-top: 0px;
