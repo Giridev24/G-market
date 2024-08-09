@@ -42,7 +42,7 @@ body{
 }
 
 .upagelft {
-  width: 70vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
