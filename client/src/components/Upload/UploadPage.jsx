@@ -57,32 +57,41 @@ const UploadPage = () => {
       }
     })();
   }, [navigate]);
-
-  const handleUpload = async () => {
+const handleUpload = async () => {
     if (!file) {
       toast.error("Please select an image file.");
       return;
     }
-
+  
     const formData = new FormData();
     formData.append("name", name);
     formData.append("description", description);
     formData.append("price", price);
     formData.append("testImage", file);
-
+  
     try {
-      await axios.post(`${baseUrl}/api/upload`, formData, {
+      const res = await axios.post(`${baseUrl}/api/upload`, formData, {
         withCredentials: true,
       });
-      toast.success("Image uploaded successfully!");
-      // Reset form fields
+  
+      if (res.data.msg) {
+        toast.success(res.data.msg); 
+      } else {
+        toast.error("Unexpected response from server.");
+      }
+  
+     
       setName("");
       setDescription("");
       setPrice("");
       setFile(null);
     } catch (error) {
-      console.error("Error uploading image:", error);
-      toast.error("Error uploading image.");
+     
+      if (error.response && error.response.data && error.response.data.msg) {
+        toast.error(error.response.data.msg); 
+      } else {
+        toast.error("Error uploading image.");
+      }
     }
   };
 
