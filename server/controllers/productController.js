@@ -15,9 +15,10 @@ const uploadImage = async (req, res) => {
       }
     });
     await saveImage.save();
-    res.send('Image is saved');
+    res.json({ msg: "Product added successfuy" });
   } catch (err) {
-    res.status(500).send('Error saving image');
+    console.error("Error adding product:", err);
+    res.status(500).json({ msg: "Product adding failed" });
   }
 };
 
