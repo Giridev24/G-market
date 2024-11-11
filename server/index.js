@@ -24,7 +24,6 @@ const corsOptions = {
   origin: 'https://g-market-five.vercel.app',
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   credentials: true,
-  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
 };
 
 
